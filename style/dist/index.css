@@ -1,0 +1,218 @@
+@font-face {
+  font-family: Suply-Regular;
+  src: url("../Suply/Supply-Regular.otf");
+}
+@font-face {
+  font-family: Suply-Bold;
+  font-weight: bold;
+  src: url("../Suply/Supply-Bold.otf");
+}
+@font-face {
+  font-family: Suply-UltraLight;
+  src: url("../Suply/Supply-UltraLight.otf");
+}
+main {
+  position: relative;
+  top: 100px;
+  width: 100%;
+}
+main .landing {
+  position: relative;
+  margin-bottom: 550px;
+}
+main .landing .left-side {
+  position: relative;
+  left: 10%;
+  top: 100px;
+  width: 40%;
+}
+main .landing .left-side a {
+  width: 100%;
+  background-color: #0a5eff;
+}
+main .landing .left-side .svg1 {
+  position: absolute;
+  top: -25px;
+  left: -50px;
+  width: 100px;
+  height: 100px;
+  z-index: -10;
+}
+main .landing .left-side .featured-events {
+  margin-top: 20px;
+}
+main .landing .left-side .featured-events a {
+  background-color: #0a5eff;
+  padding: 20px 40px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+main .landing .right-side {
+  z-index: -10;
+  position: absolute;
+  right: 1px;
+  top: 100px;
+  width: 40%;
+}
+main .landing .right-side .grid-main img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  z-index: -10;
+}
+main .landing .right-side .grid-main .grid1 {
+  top: 15px;
+  left: -15px;
+}
+main .landing .right-side .grid-main .grid2 {
+  top: 0;
+  left: 0;
+}
+main .landing .right-side .budova {
+  position: absolute;
+  top: 50px;
+  right: 50%;
+  z-index: -9;
+}
+main .mission {
+  position: relative;
+  padding: 50px;
+  background-color: #0a5eff;
+  border-radius: 30px;
+  margin-bottom: 100px;
+}
+main .mission .mission-content {
+  width: 50%;
+}
+main .mission .mission-logo {
+  z-index: 10;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: 100px;
+}
+main .mission .mission-logo span {
+  font-size: 400%;
+}
+main .mission svg {
+  position: relative;
+  left: 50%;
+  bottom: -100px;
+}
+main .mission .stripe-bg {
+  z-index: 1;
+  opacity: 0.5;
+}
+main .mission .stripe-bg img {
+  border-radius: 30px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+main .events {
+  margin-bottom: 100px;
+  position: relative;
+}
+main .events .events-header {
+  position: absolute;
+  top: -0.75em;
+}
+main .events .events-cards {
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 100%;
+  gap: 20px;
+}
+main .events .events-cards .event-card {
+  max-width: 100%;
+}
+main .events .events-cards .event-card img {
+  width: 100%;
+}
+main .events .events-cards .event-card .card-text {
+  padding: 10px;
+  display: block;
+  border: 2px solid #c8deff;
+  border-top: none;
+  width: 98%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+main .events .events-cards .event-card .card-text .event-date {
+  font-family: "Suply-Bold";
+}
+main .events .events-cards .event-card .card-text .event-date span {
+  font-family: "Suply-UltraLight";
+}
+main .events .events-cards .event-card .card-text h3 {
+  font-size: 1.25em;
+}
+main .events .all-events-btn {
+  background-color: #0a5eff;
+  width: 33%;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+main .events .all-events-btn a {
+  width: 100%;
+  color: white;
+  text-decoration: none;
+  font-size: 0.7em;
+}
+@media (max-width: 1200px) {
+  .landing .left-side p {
+    position: relative;
+  }
+  .landing .left-side .budova {
+    right: 10%;
+  }
+  .landing .budova {
+    width: 80%;
+    height: auto;
+    right: 10px;
+  }
+}
+@media (max-width: 992px) {
+  .landing {
+    margin-bottom: 200px !important;
+  }
+  .landing .left-side {
+    width: 80% !important;
+  }
+  .landing .left-side p {
+    position: relative;
+  }
+  .landing .left-side .budova {
+    right: 10%;
+  }
+  .landing .budova {
+    width: 80%;
+    height: auto;
+    right: 10px;
+    opacity: 0.75;
+  }
+  .events .events-cards {
+    grid-template-columns: auto !important;
+  }
+}
+@media (max-width: 576px) {
+  .mission .mission-content {
+    width: 100% !important;
+  }
+  .mission .mission-logo {
+    position: relative !important;
+    left: 50%;
+    transform: translate(-50%, 0) !important;
+  }
+  .mission .mission-logo span {
+    font-size: 100px;
+  }
+}

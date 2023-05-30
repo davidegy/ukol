@@ -1,0 +1,245 @@
+@font-face {
+	font-family: Suply-Regular;
+	src: url("../Suply/Supply-Regular.otf");
+}
+@font-face {
+	font-family: Suply-Bold;
+	font-weight: bold;
+	src: url("../Suply/Supply-Bold.otf");
+}
+@font-face {
+	font-family: Suply-UltraLight;
+	src: url("../Suply/Supply-UltraLight.otf");
+}
+
+@Suply-Regular: "Suply-Regular";
+@Suply-Bold: "Suply-Bold";
+@Suply-UltraLight: "Suply-UltraLight";
+
+@blau: #0a5eff;
+@light-blau: #61a0ff;
+@ultra-light-blau: rgb(200, 222, 255);
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: @Suply-Regular;
+}
+
+header {
+	padding: 0 !important;
+	position: absolute;
+	width: 100%;
+	.navbar {
+		z-index: 1000;
+		background-color: white;
+		height: 100px;
+		padding: 10px;
+
+		.navbar-brand {
+			line-height: initial;
+		}
+		.collapse,
+		.collapsing {
+			background-color: white;
+			ul {
+				.sign-up-btn {
+					background-color: #0a5eff;
+					border-radius: 10px;
+					height: 50px;
+					a {
+						position: relative;
+						top: 25%;
+						overflow: hidden;
+						background: white;
+						background-clip: text;
+						-webkit-background-clip: text;
+						-webkit-text-fill-color: transparent;
+					}
+				}
+				li {
+					margin-bottom: 15px;
+					text-align: center;
+					a {
+						text-decoration: none;
+						color: rgb(100, 100, 100);
+					}
+					a {
+						position: relative;
+						overflow: hidden;
+						background: linear-gradient(
+							to right,
+							#000,
+							#000 50%,
+							rgb(100, 100, 100) 50%
+						);
+						background-clip: text;
+						-webkit-background-clip: text;
+						-webkit-text-fill-color: transparent;
+						background-size: 200% 100%;
+						background-position: 100%;
+						transition: background-position 275ms ease;
+
+						&:hover {
+							background-position: 0 100%;
+						}
+					}
+				}
+			}
+		}
+		.navbar-toggler {
+			border: none;
+		}
+	}
+}
+
+footer {
+	position: relative;
+	top: 100px;
+	width: 100%;
+	min-height: 400px;
+	background-color: @blau;
+
+	.footer-form {
+		position: relative;
+		padding: 30px;
+		display: grid;
+		grid-template-columns: 50% 50%;
+		.form-text {
+			color: white;
+			max-width: 100%;
+			p {
+				font-family: @Suply-UltraLight;
+			}
+			img {
+				position: relative;
+				bottom: 10px;
+				left: 40%;
+			}
+		}
+		.mail-form {
+			display: grid;
+			grid-template-columns: 100%;
+			gap: 20px;
+			.input-div {
+				max-height: 50px;
+				padding: 5px;
+				position: relative;
+				background-color: white;
+				width: 75%;
+				left: 50%;
+				transform: translate(-50%, 0);
+				border-radius: 10px;
+				span {
+					font-size: 0.6em;
+				}
+				input {
+					width: 100%;
+					border: none;
+				}
+			}
+			.form-textarea {
+				margin-bottom: 30px;
+				padding: 5px;
+				position: relative;
+				background-color: white;
+				width: 75%;
+				left: 50%;
+				transform: translate(-50%, 0);
+				border-radius: 10px;
+				span {
+					font-size: 0.6em;
+				}
+				textarea {
+					width: 100%;
+					height: 80%;
+					border: none;
+				}
+			}
+			button {
+				position: relative;
+				background-color: white;
+				width: 75%;
+				left: 50%;
+				transform: translate(-50%, 0);
+				border-radius: 10px;
+				border: none;
+				min-height: 50px;
+			}
+		}
+	}
+	.footer-about {
+		display: grid;
+		grid-template-columns: 10% 30% 30% 30%;
+		color: white;
+		padding: 30px;
+		p {
+			font-family: @Suply-UltraLight;
+			position: relative;
+		}
+	}
+}
+@media (min-width: 992px) {
+	.navbar-expand-lg {
+		width: 100%;
+		ul {
+			padding-right: 10px;
+			position: absolute;
+			right: 0 !important;
+			width: 50%;
+			display: grid;
+			grid-template-columns: auto auto auto auto auto auto;
+			li {
+				text-align: center;
+				a {
+					text-decoration: none;
+					color: rgb(100, 100, 100);
+				}
+				a {
+					position: relative;
+					font-weight: 800;
+					overflow: hidden;
+					background: linear-gradient(
+						to right,
+						#000,
+						#000 50%,
+						rgb(100, 100, 100) 50%
+					);
+					background-clip: text;
+					-webkit-background-clip: text;
+					-webkit-text-fill-color: transparent;
+					background-size: 200% 100%;
+					background-position: 100%;
+					transition: background-position 275ms ease;
+
+					&:hover {
+						background-position: 0 100%;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 992px) {
+	.footer-form {
+		grid-template-columns: 100% !important;
+		.form-text {
+			img {
+				position: relative;
+				bottom: 10px;
+				left: 10% !important;
+			}
+		}
+		.mail-form {
+			gap: 20px;
+		}
+	}
+	.footer-about {
+		grid-template-columns: 100% !important;
+		p {
+			left: 0;
+			transform: translate(0, 0);
+		}
+	}
+}
